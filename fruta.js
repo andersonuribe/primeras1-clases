@@ -145,15 +145,113 @@
 // const total = carrito.reduce((acum, item)=> acum + item.valor, 0);
 // console.log(total);
 
-const word = ['apple', 'benana', 'nombre', 'bye', 'banana', 'apple', 'apple'];
+// const word = ['apple', 'benana', 'nombre', 'bye', 'banana', 'apple', 'apple'];
 
-const wordFrencuency = word.reduce((accomulador, currentValue) => {
-    if (accomulador[currentValue]) {
-        accomulador[currentValue] ++
-    } else {
-        accomulador[currentValue] = 1
-    }
-    return accomulador
-    }, {})
+// const wordFrencuency = word.reduce((accomulador, currentValue) => {
+//     if (accomulador[currentValue]) {
+//         accomulador[currentValue] ++
+//     } else {
+//         accomulador[currentValue] = 1
+//     }
+//     return accomulador
+//     }, {})
 
-console.log(wordFrencuency)
+// console.log(wordFrencuency)
+
+// class personal {
+//     constructor(name, edad) {
+//         this.name = name;
+//         this.edad = edad;
+//     }
+//     saludar() {
+//         console.log(`hola, mi nombre es ${this.name} y tengo ${this.edad} años`);
+//     }
+// }
+
+// class Animal {
+//  constructor(nombre, tipo) {
+//     this.nombre = nombre;
+//     this.tipo = tipo;
+//     }
+
+
+//     emiteSonido() {
+//     console.log("El animal emite un sonido");
+//     }
+
+//     class Perro extends Animal {
+//     constructor(nombre, raza) {
+//         super(nombre, tipo);
+//         this.raza = raza;
+//         }
+//     }
+//         emiteSonido() {
+//         console.log("El perro ladra");
+//         }
+//         correr() {
+//         console.log(`${this.nombre} corre alefremente`);
+//         }
+//     }
+
+//     const perro1 = new Perro("bobby", "perro", "pug");
+
+//     console.log(perro1)
+//     perro1.emiteSonido();
+//     perro1.correr();
+
+
+
+// class persona {
+//     constructor(nombre, edad) {
+//         this.nombre = nombre;
+//         this.edad = edad;
+//     }
+// }
+
+// const personal1 = new persona("andersoon", 18);
+
+// console.log(personal1);
+
+// personal1.nuevoMetodo = function() {
+//     console.log(`mi nombre es ${this.nombre}`)
+// }
+
+const usersTimeline =[
+    {
+        username:"anderson",
+        password:"12345"
+    },
+    {
+        username:"cristiann",
+        password:"67890"
+    },
+    {
+        username:"carlos",
+        password:"54321"
+    },
+    {
+        username:"maria",
+        password:"98765"
+    },
+    {
+        username:"lucia",
+        password:"11223"
+    },
+]
+
+const usersTimeline = [
+];
+
+const username = prompt("ingresa tu nombre de usuario:");
+const password = prompt("ingresa tu contraseña:");
+
+function usuarioExistente(username, password) {green
+ for (let i = 0; i < usersTimeline.length; i++) 
+if (
+    usersDatabase[i].username === username &&
+    usersDatabase[i].password === password
+) {
+   console.log("es correcto")
+   break
+ }
+}
