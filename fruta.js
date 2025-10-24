@@ -216,42 +216,76 @@
 //     console.log(`mi nombre es ${this.nombre}`)
 // }
 
-const usersTimeline =[
-    {
-        username:"anderson",
-        password:"12345"
-    },
-    {
-        username:"cristiann",
-        password:"67890"
-    },
-    {
-        username:"carlos",
-        password:"54321"
-    },
-    {
-        username:"maria",
-        password:"98765"
-    },
-    {
-        username:"lucia",
-        password:"11223"
-    },
-]
+// const usersTimeline =[
+//     {
+//         username:"anderson",
+//         password:"12345"
+//     },
+//     {
+//         username:"cristiann",
+//         password:"67890"
+//     },
+//     {
+//         username:"carlos",
+//         password:"54321"
+//     },
+//     {
+//         username:"maria",
+//         password:"98765"
+//     },
+//     {
+//         username:"lucia",
+//         password:"11223"
+//     },
+// ]
 
-const usersTimeline = [
-];
+// const usersTimeline = [
+// ];
 
-const username = prompt("ingresa tu nombre de usuario:");
-const password = prompt("ingresa tu contraseña:");
+// const username = prompt("ingresa tu nombre de usuario:");
+// const password = prompt("ingresa tu contraseña:");
 
-function usuarioExistente(username, password) {green
- for (let i = 0; i < usersTimeline.length; i++) 
-if (
-    usersDatabase[i].username === username &&
-    usersDatabase[i].password === password
-) {
-   console.log("es correcto")
-   break
- }
+// function usuarioExistente(username, password) {green
+//  for (let i = 0; i < usersTimeline.length; i++) 
+// if (
+//     usersDatabase[i].username === username &&
+//     usersDatabase[i].password === password
+// ) {
+//    console.log("es correcto")
+//    break
+//  }
+// }
+
+// const foo = () => console.log("first");
+// const bar = () => console.log(()=> console.log("second"); 500);
+// const baz = () => console.log("third");
+
+// bar();
+// foo();
+// baz();
+
+// const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let operantionSuccessful = true;
+//         if (operantionSuccessful) {
+//             resolve("La operación fue exitosa");
+//         } else {
+//             reject("La operación falló");
+//         }
+//     }, 2000);
+// });
+
+// promise
+//     .then((successMessage) => {
+//         console.log(successMessage);
+//     })
+//     .catch((errorMessage) => {
+//         console.log(errorMessage);
+//     });
+
+function fetchData() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.log(error));
 }
